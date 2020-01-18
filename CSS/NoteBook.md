@@ -301,3 +301,14 @@ box-sizing: border-box;
   clear: both;
 }
 ```
+
+
+# 定位
+绝对定位
+
+相对定位
+
+固定定位
+
+粘滞定位
+sticky

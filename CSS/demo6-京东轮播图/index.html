@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    main {
+      margin: 200px auto;
+      width: 1200px;
+      height: 470px;
+      background-color: #ccc;
+    }
+
+    .focus {
+      margin: 0 auto;
+      width: 590px;
+      height: 470px;
+      position: relative;
+    }
+
+    .focus .spanlist {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      height: 15px;
+    }
+
+    .focus .spanlist span {
+      display: inline-block;
+      margin: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(200, 200, 200, .5);
+      border-radius: 50%;
+    }
+
+    .focus .spanlist span.active {
+      display: inline-block;
+      margin: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(200, 200, 200, .5);
+    }
+
+    .focus .spanlist span:hover {
+      display: inline-block;
+      margin: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(200, 200, 200, .5);
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="focus">
+      <a href="javascript:;">
+        <img src="./f87121f9ec33d2be.jpg.webp" alt="苹果手机">
+      </a>
+      <div class="spanlist">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
