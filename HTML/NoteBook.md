@@ -199,3 +199,42 @@ audio 标签用于引入一个外部音频文件
 <!-- 智障 IE8 用这个 -->
 <embed src="音频文件" type="audio/mp3">
 ```
+
+
+## HTML 表格
+```html
+<table>
+  <!-- 一个 tr 表示表格中的一行 -->
+  <tr>
+    <!-- 一个 td 表示一个格子 -->
+    <td></td>
+    <!-- rowspan 表示纵向合并单元格 -->
+    <td rowspan="2"></td>
+    <td></td>
+    <!-- clospan 表示横向合并单元格 -->
+    <td clospan="2"></td>
+  </tr>
+</table>
+```
+
+可以将表格分为三个部分
+thead  头部的单元格用 th 表示
+tbody
+tfoot
+
+### 表格样式
+  border-spacing: collapse;
+
+
+## 表单
+表单用于提交数据
+
+form
+提交数据需要有一个 name 属性
+  文本框
+  密码框
+  单选框
+  复选框
+  下拉列表
+  提交按钮
+
