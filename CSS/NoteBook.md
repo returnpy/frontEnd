@@ -311,4 +311,94 @@ box-sizing: border-box;
 固定定位
 
 粘滞定位
-sticky
+   sticky
+
+
+# 字体
+字体颜色
+    color
+字体大小
+    font-size
+字体单位
+    px
+    em
+    rem
+字体格式
+    font-family
+        serif   衬线字体
+        san-serif   非衬线字体
+        monospace   等宽字体
+        cursive   艺术字体
+        fantasy   虚幻字体
+
+```css
+@font-face {
+  /* 使用 font-face 需要注意 加载速度问题/版权问题/体格格式 ！ */
+  font-family: 'myfont';
+  src: url() format("truetype");
+}
+```
+
+
+## 字体图标
+把字体作为图标使用
+    iconfont  icomoon fontawesome
+
+## 字体的简写属性
+字体的行间距 = 行高 - 字体大小
+
+```css
+div {
+  font: 字重 font-style 字体大小/行高 '字体';
+}
+```
+
+## 文本样式
+水平居中
+  text-align: center
+    justify 两端对齐
+设置元素垂直的对其方式
+  vertical-align
+    baseline
+    top
+    bottom
+    middle
+    还可以指定 px
+文本修饰
+  text-decoration
+    line-through  删除线
+    underlien  下划线
+    none  什么都没有
+    overline  上划线
+
+  white-space 设置网页如何处理空白
+    nowarp  不换行
+    pre 保留空白
+    
+  text-overflow: ellipsis;
+
+
+## 背景
+```css
+div {
+  background-color
+  background-image: url('路径');
+  background-repeat: repeat; x; y; no-repeat;
+  background-position: top left right bottom center;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-size: cover contain;
+  background-attachment: scroll; fiexd;
+
+  background: 颜色 图片 位置/大小 是否重复 是否固定
+}
+
+```
+渐变
+background-image: linear-gradient(to right, red, yellow);
+                                  deg
+                                  turn
+
+                  repeating-linear-gradient(red 50px, yellow 100px);
+
+radial-gradient()  径向渐变
