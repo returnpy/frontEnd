@@ -1,0 +1,229 @@
+.topbar-wrapper {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.topbar-wrapper a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.topbar-wrapper a:hover {
+  color: #fff;
+}
+
+.service li {
+  float: left;
+}
+
+.app .qrcode {
+  position: absolute;
+  left: -40px;
+  width: 124px;
+  height: 0;
+  overflow: hidden;
+  line-height: 1;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  transition: height .3s;
+}
+
+.app:hover .qrcode {
+  display: block;
+  height: 148px;
+}
+
+.app .qrcode img {
+  margin: 17px;
+  margin-bottom: 10px;
+  width: 90px;
+}
+
+.qrcode span {
+  color: #333;
+  font-size: 16px;
+}
+
+.app {
+  position: relative;
+}
+
+.app:hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0px;
+  border: 7px solid transparent;
+  border-top: none;
+  border-bottom-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.sep {
+  margin: 0 10px;
+  color: #424242;
+}
+
+.user-info {
+  margin: 0 50px;
+}
+
+.user-info li {
+  float: left;
+}
+
+.shop-cart {
+  width: 120px;
+  height: 40px;
+  background-color: #424242;
+  text-align: center;
+  position: relative;
+}
+
+.shop-cart:hover a {
+  background-color: #fff;
+  color: orangered;
+  height: 40px;
+  z-index: 999;
+}
+
+.shop-cart:hover .shop-list {
+  display: block;
+  height: 100px;
+  transition: height .3s;
+}
+
+.shop-list {
+  width: 330px;
+  height: 0px;
+  position: absolute;
+  right: -1px;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: -1;
+  line-height: 100px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.shop-list span {
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.container {
+  line-height: 100px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  background: orange url(../images/mi-logo.png) no-repeat;
+  background-position: 0px;
+  margin-top: 22.5px;
+  float: left;
+  transition: all .3s;
+}
+
+.logo:hover {
+  background-position: 50px;
+}
+
+.logo a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  text-indent: -999px;
+}
+
+.nav-list {
+  width: 800px;
+  font-size: 16px;
+  padding-left: 200px;
+  float: left;
+}
+
+.nav-list li {
+  float: left;
+}
+
+.nav-list li:hover a {
+  color: #ff6700;
+}
+
+.nav-lit li:hover .nav-list li a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+  display: block;
+}
+
+.search {
+  margin-top: 22.5px;
+  width: 300px;
+  height: 50px;
+  float: left;
+}
+
+.search input {
+  width: 245px;
+  height: 50px;
+  outline: none;
+  float: left;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.search button {
+  width: 52px;
+  height: 50px;
+  float: left;
+  background-color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.search button i {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.category-list {
+  padding-top: 20px;
+  height: 200px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+
+.category-list li {
+  float: left;
+  margin: 10px;
+  padding-rigqiht: 10px;
+}
+
+.category-list li:nth-child(-n + 5) img {
+  border-right: 1px solid #ccc;
+  width: 160px;
+}
+
+.category-list div {
+  text-align: center;
+}
+
+.head-price {
+  color: orange;
+}
